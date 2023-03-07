@@ -1,11 +1,12 @@
 import React from "react";
-import { Button, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import Lottie from "react-lottie";
 import animationData from "../lotties/131298-04-schedule-payment.json";
 
 import CustomHeader from "../components/CustomHeader";
 import business from "../assets/business.jpg";
 import CustomButton from "../components/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
   const defaultOptions = {
@@ -16,6 +17,8 @@ function LandingPage() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -41,7 +44,7 @@ function LandingPage() {
           marginX={{ xs: 0, sm: 1, md: 7 }}
         >
           <Stack
-            width={{ xs: "100%", sm: "100%", md: "70%" }}
+            width={{ xs: "100%", sm: "100%", md: "50%" }}
             alignItems="center"
             spacing={2}
           >
@@ -61,7 +64,9 @@ function LandingPage() {
               text="Entrar"
               color="secondary.main"
               variant="outlined"
-              function={() => {}}
+              function={() => {
+                navigate("/dashboard");
+              }}
             />
           </Stack>
           <Stack width={{ xs: "9rem", sm: "20rem", md: "40rem" }}>

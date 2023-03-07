@@ -7,8 +7,7 @@ function CustomButton(props) {
       sx={{
         padding: ".4rem",
         width: "9rem",
-        borderColor: "white",
-        borderRadius: "30px",
+        borderColor: props.color,
         color: props.color,
         fontSize: "10px",
       }}

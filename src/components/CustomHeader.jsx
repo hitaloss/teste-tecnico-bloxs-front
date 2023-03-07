@@ -10,7 +10,7 @@ function CustomHeader() {
   const open = Boolean(anchor);
 
   return (
-    <AppBar sx={{ p: 1, backgroundColor: "primary.light" }} position="static">
+    <AppBar sx={{ p: 0.3, backgroundColor: "primary.light" }} position="static">
       <Toolbar>
         <Typography
           variant="h4"
