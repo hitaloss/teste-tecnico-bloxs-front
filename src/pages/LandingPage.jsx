@@ -52,7 +52,7 @@ function LandingPage() {
               color="text"
               textAlign="center"
               fontSize={{
-                xs: "3.5rem",
+                xs: "2.9rem",
                 sm: "4rem",
                 lg: "4rem",
               }}
@@ -62,7 +62,6 @@ function LandingPage() {
             </Typography>
             <CustomButton
               text="Entrar"
-              color="secondary.main"
               variant="outlined"
               function={() => {
                 navigate("/dashboard");

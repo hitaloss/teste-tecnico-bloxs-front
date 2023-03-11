@@ -2,7 +2,6 @@ import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
   palette: {
-    type: "light",
     primary: {
       main: "#2e3e87",
       dark: "#27346a",
@@ -15,6 +14,11 @@ export const theme = createTheme({
     },
     text: {
       primary: "#f2f2f2",
+      secondary: "#afafac",
+      contrast: "#121212",
+    },
+    background: {
+      whiteFixed: "#FFFFFF",
     },
     feedback: {
       success1: "#18794E",
@@ -26,7 +30,7 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Inter",
+    fontFamily: "Lexend",
     h1: {
       fontWeight: 700,
       fontSize: "2.75rem",

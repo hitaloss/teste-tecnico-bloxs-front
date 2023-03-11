@@ -3,11 +3,13 @@ import { AppBar, Toolbar, IconButton, Typography, Stack } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { useNavigate } from "react-router-dom";
 
 function CustomHeader() {
   const [anchor, setAnchor] = useState(null);
 
   const open = Boolean(anchor);
+  const navigate = useNavigate();
 
   return (
     <AppBar sx={{ p: 0.3, backgroundColor: "primary.light" }} position="static">
@@ -17,6 +19,10 @@ function CustomHeader() {
           component="div"
           sx={{
             flexGrow: 1,
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            navigate("/");
           }}
         >
           Bloxs Bank
@@ -24,7 +30,10 @@ function CustomHeader() {
         <Stack spacing={2} direction="row">
           <IconButton
             onClick={() =>
-              window.open("https://www.instagram.com/hitaloss/", "_blank")
+              window.open(
+                "https://www.linkedin.com/in/hitalosantossilva/",
+                "_blank"
+              )
             }
             sx={{
               color: "text",
@@ -46,10 +55,7 @@ function CustomHeader() {
           </IconButton>
           <IconButton
             onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/hitalosantossilva/",
-                "_blank"
-              )
+              window.open("https://www.instagram.com/hitaloss/", "_blank")
             }
             sx={{
               color: "text",

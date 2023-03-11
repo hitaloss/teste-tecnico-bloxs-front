@@ -10,7 +10,7 @@ function App() {
         position="bottom-center"
         autoClose={3000}
         limit={2}
-        hideProgressBar={false}
+        hideProgressBar
         newestOnTop={false}
         closeOnClick
         rtl={false}
@@ -18,6 +18,7 @@ function App() {
         draggable
         pauseOnHover
         transition={Slide}
+        theme="dark"
       />
       <CssBaseline />
       <Routes />
