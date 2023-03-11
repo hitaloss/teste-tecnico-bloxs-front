@@ -122,7 +122,6 @@ export const blockAccount = async (accountId) => {
     data: deactivate,
   })
     .then((res) => {
-      console.log(res);
       toast.success(`Conta desativada com sucesso`);
       return res;
     })
